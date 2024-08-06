@@ -12,4 +12,6 @@ The supported Elektron devices are:
 + Analog Rytm (Mk1).
 
 If you want to get the OLED module, contact me through \[put_here_my_github_username\]@gmail.com
+
+
 More info coming ~soon~ when I have time for it...
