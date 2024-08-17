@@ -5,6 +5,7 @@ OLED panels in stock (that I put in when shipping the kit):
 + yellow: 2
 + blue: 5
 + green: 5
+
 Stock is continuously changing, so... just ask.
 
 For anybody who wants the OLED upgrade kit, you should email me the following info:
