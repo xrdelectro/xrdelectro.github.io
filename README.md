@@ -11,7 +11,6 @@ The supported Elektron devices are:
 + Analog Keys (Mk1),
 + Analog Rytm (Mk1).
 
-If you want to get the OLED module, contact me through \[put_here_my_github_username\]@gmail.com
-
+To order the OLED upgrade kit, follow instructions [here](order.md)
 
 More info coming ~~soon~~ when I have time for it...
