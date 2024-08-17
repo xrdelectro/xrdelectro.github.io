@@ -11,10 +11,10 @@ OLED panels in stock:
 Stock changes... just ask about it.
 
 For anybody who wants the OLED upgrade kit, you should email me the following info:
-1) full name,
-2) shipping address,
-3) phone number (for postal service to inform about arrival of the package),
-4) color & quantity.
+1. full name,
+2. shipping address,
+3. phone number (for postal service to inform about arrival of the package),
+4. color & quantity.
 
 As of writing this, 120€/unit + shipping (15€ for first, 5€ per additional unit). 
 Will send you an invoice to pay for.
