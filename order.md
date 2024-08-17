@@ -15,6 +15,7 @@ For anybody who wants the OLED upgrade kit, you should email me the following in
 6) color & quantity.
 
 Will send you an invoice to pay for.
+
 As of writing this, 120€/unit + shipping (15€ for first, 5€ per additional unit). 
 
 
