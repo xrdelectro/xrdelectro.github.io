@@ -29,6 +29,8 @@ Email me the following info:
 And I will send you an invoice to pay for.
 
 ## E-mail
+order xrd lv (with @ and .)
+or
 xrdelectro gmail com (with @ and .)
 
 [original elektronauts.com Analog Mk1 OLED discussion](https://www.elektronauts.com/t/oled-display-for-elektron-mk1-analog-devices-four-heat-keys-rytm/207919)
