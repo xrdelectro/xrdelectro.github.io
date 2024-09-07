@@ -6,10 +6,10 @@ The kit consists of OLED panel and PCB.
 PCBs in stock: 12.
 
 OLED panels in stock:
-+ white: >12
-+ yellow: 2
-+ blue: 5
-+ green: 5
++ white:   25
++ yellow:  14
++ blue:     5
++ green:    5
 
 Stock changes... so just ask about it.
 
