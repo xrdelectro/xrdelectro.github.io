@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Micro Gallery</title>
+    <style>
+      #container {
+        width: 70%;
+        margin: auto;
+      }
+      #image {
+        width: 92%;
+      }
+      /* #thumb-row { */
+      /*   vertical-align: top; */
+      /* } */
+      .thumb {
+        vertical-align: top;
+        width: 22.7%;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script>
+      $(function () {
+        $(".thumb").on("mouseenter", function (e) {
+          $("#image").attr("src", $(e.target).attr("src"));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <img src="photo/revB_yellow.jpg" id="image" />
+
+      <div id="thumb-row">
+        <img src="photo/revB_white.jpg" class="thumb" />
+        <img src="photo/revB_yellow.jpg" class="thumb" />
+        <img src="photo/revB_green.jpg" class="thumb" />
+        <img src="photo/revB_blue.jpg" class="thumb" />
+      </div>
+    </div>
+  </body>
+</html>
