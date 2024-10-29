@@ -1,0 +1,13 @@
+<!-- https://jsfiddle.net/69zxv43s/ -->
+<body>
+  <a id="email_a"></a>
+  <script type="text/javascript">
+    const e_arr = ["o", "r", "d", "e", "r", "@", "x", "r", "d", ".", "l", "v"];
+    const e_str = e_arr.join("");
+    console.log(e_str);
+    var a = document.getElementById("email_a");
+    console.log(a.href);
+    a.href = "mailto:" + e_str;
+    a.textContent = e_str;
+  </script>
+</body>
