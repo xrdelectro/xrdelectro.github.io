@@ -2,18 +2,7 @@
 
 ## Stock
 
-The kit consists of OLED panel and PCB.
-
-PCBs in stock: 4.
-
-OLED panels in stock:
-
-- white: 24
-- yellow: 14
-- blue: 6
-- green: 6
-
-Stock changes... so just ask about it.
+<span style="color:red">Currently dispay modules are out of stock!!</span>.
 
 ## Price & payment
 
