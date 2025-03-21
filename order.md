@@ -2,7 +2,14 @@
 
 ## Stock
 
-<span style="color:red">Currently dispay modules are out of stock!!</span>.
+OLEDs modules in stock:
+
+- white: 22
+- yellow: 12
+- blue: 6
+- green: 6
+
+Stock changes... so just ask about it.
 
 ## Price & payment
 
@@ -14,7 +21,7 @@ Currently only a SWIFT payment/wire transfer possible.
 
 Email me the following info:
 
-1. full name,
+1. full legal name,
 2. shipping address,
 3. phone number (for postal service to inform about arrival of the package),
 4. color & quantity.
