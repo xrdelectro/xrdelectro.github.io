@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-shop="https://shop.xrd.lv" lang="en" data-root="../../../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>odm-ea1 DIP switches and troubleshooting</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/site.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main>
+  <div class="container">
+    <div class="prose guide">
+      <p class="breadcrumb"><a href="../">odm-ea1 OLED display module for Analog Mk1</a> / DIP switches and troubleshooting</p>
+      <h1>DIP switches and troubleshooting</h1>
+      <p>Mostly for troubleshooting. The everyday use: with the device open and off, power the module from micro-USB and switch DIP 6 on to see text
+      while you adjust brightness with the trim pot.</p>
+      <p><strong>When done, switch DIP 4–7 off</strong> (towards the middle of the module). A test mode left on interferes with normal operation.</p>
+
+      <h2>Where they are</h2>
+      <p>Under the OLED panel. Press the plastic clip (on the long edge, near the USB socket) towards the board and, holding it, slide the panel up.
+      The <a href="../install/#test">install guide</a> has photos. The module can be powered on its own from a micro-USB cable.</p>
+
+      <h2>What each switch does</h2>
+      <table class="spec-table">
+        <tr><td>DIP 1</td><td>Inverted display</td></tr>
+        <tr><td>DIP 2, 3</td><td>Brightness: both off = set by the trim pot; the other three combinations are fixed low, medium and high (the pot is ignored)</td></tr>
+        <tr><td>DIP 4</td><td>Debug screen: firmware version and the state of the input pins</td></tr>
+        <tr><td>DIP 5</td><td>Panel test: a sliding unlit vertical bar (inverted with DIP 1)</td></tr>
+        <tr><td>DIP 6</td><td>Test text</td></tr>
+        <tr><td>DIP 7</td><td>Firmware v1.0.2: a sample Analog Keys screen; v1.0.1: debug output over USB serial. Makes the screen look stuck if left on.</td></tr>
+      </table>
+
+      <h2>Nothing on the screen after installing</h2>
+      <ol>
+        <li>Look over all solder joints: each should have a clean fillet, and no solder bridging neighbouring pins.</li>
+        <li>Check the panel: switch DIP 6 on and power the module from a known-good 5&nbsp;V micro-USB supply. It should show text with a web address.
+          If not, the flat cable from the panel to the board has probably come loose: reseat it. If that doesn't help, the panel or board is faulty.</li>
+        <li>If the panel works: switch DIP 4 on and all others off (DIP 6 too). It shows "DBG", "fw" with the version, and graphics that follow
+          the input pins. Disconnect USB, then film the DBG screen while you power on the Elektron device, and send the video to
+          <a data-m="jogpAyse/mw">e-mail</a>: it shows whether an input pin gets no signal from the main board.</li>
+      </ol>
+      <p>With USB power in DIP 4 mode, a multimeter in diode mode can also check that every signal from the main board reaches the module.
+      If nothing helps, send the module in and we try to fix it.</p>
+
+      <h2>Known issues</h2>
+      <ul>
+        <li><strong>Vertical halo stripes, bottom-row leakage:</strong> fixed in firmware v1.0.5 (revC boards on). Write to
+          <a data-m="jogpAyse/mw">e-mail</a> with a photo of the serial number (left side of the bracket, below the code).</li>
+        <li><strong>Screen protector pushed out:</strong> the kit's spacers were used; fit Elektron's original ones.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="../../../js/site.js"></script>
+</body>
+</html>

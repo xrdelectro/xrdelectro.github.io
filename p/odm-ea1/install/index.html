@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html data-shop="https://shop.xrd.lv" lang="en" data-root="../../../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installing the odm-ea1</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/site.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main>
+  <div class="container">
+    <div class="prose guide">
+      <p class="breadcrumb"><a href="../">odm-ea1 OLED display module for Analog Mk1</a> / Installation</p>
+      <h1>Installing the odm-ea1 OLED display module</h1>
+      <p class="sub">For Elektron Analog Four, Heat, Keys and Rytm (Mk1). Write-up and photos by <strong>Sip</strong> (Analog Keys), from the
+      <a href="https://www.elektronauts.com/t/oled-display-for-elektron-mk1-analog-devices-four-heat-keys-rytm/207919">Elektronauts thread</a>,
+      with notes from xrd.lv and other installers there. Thank you!</p>
+
+      <h2>Video</h2>
+      <p>infekted's video tutorial shows the whole job, with tool suggestions:</p>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/1dA0PXbOP7g" title="odm-ea1 installation video by infekted"
+        allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+
+      <h2>Before you start</h2>
+      <ul>
+        <li><strong>Skill:</strong> this means desoldering a 20-pin header and two single pins, and soldering the new module on. If you are new to soldering,
+          practise first, or ask a repair shop (several owners in the thread did; one paid about $100).</li>
+        <li><strong>Time:</strong> 1.5–4 hours, most of it disassembly (Analog Keys is the hardest to open).</li>
+        <li><strong>Tools:</strong> T10 and T9 Torx (Keys), soldering iron with a small tip, flux, solder wick, and a desoldering tool:
+          a heated desoldering pump (Yihua 929D-V, about 15–25&nbsp;€) makes it easy; a spring solder sucker with a <em>silicone</em> tip works too
+          (on a hard tip, slide on a short piece of silicone tube). Kapton or painter's tape, isopropyl alcohol.</li>
+        <li><strong>Protect the plastic:</strong> cover nearby plastic (spacers, encoder shafts) with Kapton tape; the iron melts it easily.</li>
+        <li><strong>Spacers:</strong> <strong>do not use the spacers that came in the kit.</strong> Keep Elektron's original white spacers: the kit's are
+          a different size on some units and push the screen protector out (seen on two Rytms).</li>
+      </ul>
+
+      <h2>1. Disassembly (Analog Keys)</h2>
+      <p>For Analog Four: 6 faceplate Allen screws, detach 2 cables, then 8 hex screws to take the top board off the faceplate. Rytm and Heat are similar;
+      only Keys needs the steps below.</p>
+      <p>Pull off the 13 knob caps (Master Volume, Level, the ten A–J encoders, the big Sound Selection knob). Lay the Keys upside down on something soft,
+      keys facing you, minding the joystick. The bottom has 28 T10 Torx screws: red ones hold the back of the case, blue ones the keyboard.</p>
+      <figure><img src="../../../pic/install/sip-01.jpg" alt="Bottom screws: red hold the case back, blue the keyboard" loading="lazy"><figcaption>Bottom screws: red hold the case back, blue the keyboard</figcaption></figure>
+      <p>Lift the back slowly: a circuit board stays attached to it. Lift from the front and slide the panel slightly left so the board clears the
+      metal tabs on the right. Three cables have little slack; disconnect the power connector (two white wires) and two 10-pin connectors, noting which way
+      each faces.</p>
+      <figure><img src="../../../pic/install/sip-02.jpg" alt="Power connector" loading="lazy"><figcaption>Power connector</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-03.jpg" alt="10-pin connector" loading="lazy"><figcaption>10-pin connector</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-04.jpg" alt="Second 10-pin connector" loading="lazy"><figcaption>Second 10-pin connector</figcaption></figure>
+      <p>Disconnect the keybed from the front panel board: a blue 4-pin and a red 20-pin connector. Then remove the keybed.</p>
+      <figure><img src="../../../pic/install/sip-05.jpg" alt="Blue 4-pin connector" loading="lazy"><figcaption>Blue 4-pin connector</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-06.jpg" alt="Red 20-pin connector" loading="lazy"><figcaption>Red 20-pin connector</figcaption></figure>
+      <p>Disconnect the 40-pin ribbon to the key LEDs (bottom left; snug, almost no slack; easiest while the board is still screwed in).</p>
+      <figure><img src="../../../pic/install/sip-07.jpg" alt="40-pin LED ribbon connector" loading="lazy"><figcaption>40-pin LED ribbon connector</figcaption></figure>
+      <p>Remove the T9 screws holding the two boards to the front panel. Keep the joystick board connected to the large board; lift the left side of the
+      large board while supporting the small one, tilt them up to clear the screw tabs, and take both out together. Then separate them.</p>
+      <figure><img src="../../../pic/install/sip-08.jpg" alt="Tilting both boards out together" loading="lazy"><figcaption>Tilting both boards out together</figcaption></figure>
+
+      <h2>2. Removing the old LCD</h2>
+      <p>Desolder the 20 pins (blue line) and the 2 single pins (blue dots). The red arrow marks the trim pot used later for brightness.
+      (The alternative, cutting the pins and replacing the headers with the ones in the kit, is less work but riskier for the board.)</p>
+      <figure><img src="../../../pic/install/sip-09.jpg" alt="20 pins + 2 pins to desolder; trim pot (red arrow)" loading="lazy"><figcaption>20 pins + 2 pins to desolder; trim pot (red arrow)</figcaption></figure>
+      <ul>
+        <li>Flux every joint. Add a little fresh solder to joints that won't clear: it seals the pump nozzle against the pad.</li>
+        <li>Heated pump: let it heat up (5 min), put the nozzle fully over the pin, flat on the pad, wait about 2 s, release. One pin at a time;
+          a second pass with fresh flux, extra time on the two side pins. Eject solder into a heat-safe dish; let the pump cool if it runs hot.</li>
+        <li>Some installers desolder from the bottom side of the board, and only the two side pins from above.</li>
+        <li>Wicking first, as Sip did, is optional; it can even make pumping harder.</li>
+      </ul>
+      <figure><img src="../../../pic/install/sip-10.jpg" alt="After wicking: note the melted spacer, protect plastic with tape" loading="lazy"><figcaption>After wicking: note the melted spacer, protect plastic with tape</figcaption></figure>
+      <p>When all holes are clear, a firm tug lifts the LCD board off the pins. If it won't move, solder remains in a hole: add fresh solder and pump
+      again. The bottom two spacers are glued from the back of the main board and stay there; the top two come off with the LCD. Move Elektron's spacers to
+      the new module (squeeze the top of a spacer with pliers to free it). Clean the area with isopropyl alcohol.</p>
+      <figure><img src="../../../pic/install/sip-11.jpg" alt="LCD board lifted off" loading="lazy"><figcaption>LCD board lifted off</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-12.jpg" alt="Two spacers stay in the board, two in the old LCD" loading="lazy"><figcaption>Two spacers stay in the board, two in the old LCD</figcaption></figure>
+
+      <h2>3. Soldering the new module</h2>
+      <p>Tape over the OLED's face. Straighten any bent pin, slide the module onto the pins and solder all 22. A small tip helps; the ground pin is the
+      awkward one to reach.</p>
+      <figure><img src="../../../pic/install/sip-13.jpg" alt="Tape protects the screen" loading="lazy"><figcaption>Tape protects the screen</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-14.jpg" alt="Soldered" loading="lazy"><figcaption>Soldered</figcaption></figure>
+
+      <h2 id="test">4. Test and brightness</h2>
+      <p>On Four, Heat and Rytm, simply reconnect the board (a piece of cardboard between the boards keeps them apart) and adjust brightness on the device.
+      On Keys, testing on USB power is easier: the module shows test text with DIP switch 6 on. To reach the DIP switches, push the long black clip at the
+      top of the bracket toward the board and slide the screen out.</p>
+      <figure><img src="../../../pic/install/sip-15.jpg" alt="Push the clip down" loading="lazy"><figcaption>Push the clip down</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-16.jpg" alt="Slide the screen out" loading="lazy"><figcaption>Slide the screen out</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-17.jpg" alt="DIP switches revealed" loading="lazy"><figcaption>DIP switches revealed</figcaption></figure>
+      <figure><img src="../../../pic/install/sip-18.jpg" alt="Test text with DIP 6 on" loading="lazy"><figcaption>Test text with DIP 6 on</figcaption></figure>
+      <p>Adjust brightness with the trim pot (red arrow in the earlier photo) once the module is soldered. Then
+      <strong>switch DIP 6 back off</strong>: the test switches 4–7 must all be off in normal use (DIP 7 on, for example, makes the screen look stuck).
+      DIP 1–3 are settings (inverted display, fixed brightness levels); see the <a href="../dips/">DIP switch page</a>.</p>
+
+      <h2>5. Reassembly</h2>
+      <p>Reverse the steps. Fit the keyboard screws first. Screws only snug. Put in a few board screws, reconnect everything and test before fitting the
+      rest: dust inside the screen window is easy to clean now and not later.</p>
+      <figure><img src="../../../pic/install/sip-19.jpg" alt="Done" loading="lazy"><figcaption>Done</figcaption></figure>
+
+      <h2>Troubleshooting</h2>
+      <p>More in <a href="../dips/">DIP switches and troubleshooting</a>.</p>
+      <ul>
+        <li><strong>Screen protector pushed out:</strong> the kit's spacers were used; fit Elektron's originals (or small bolts and nuts at the bottom).</li>
+        <li><strong>Strange or frozen screen:</strong> check that DIP switches 4–7 are off (unlatch the bracket: 4 snap hooks, press the top pair
+          toward each other first).</li>
+        <li><strong>Vertical halo stripes, bottom-row leakage:</strong> fixed in firmware v1.0.5 (revC boards on). Write to <a data-m="jogpAyse/mw">e-mail</a>
+          with a photo of the serial number (left side of the bracket, below the code).</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="../../../js/site.js"></script>
+</body>
+</html>

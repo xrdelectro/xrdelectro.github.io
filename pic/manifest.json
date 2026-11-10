@@ -1,0 +1,27 @@
+{
+  "odm-ea1-revD": [],
+  "odm-ea1-revD/w": [
+    "pic/odm-ea1-revD/w/revB_white.jpg"
+  ],
+  "oled-panel/w": [
+    "pic/odm-ea1-revD/w/revB_white.jpg"
+  ],
+  "odm-ea1-revD/y": [
+    "pic/odm-ea1-revD/y/revB_yellow.jpg"
+  ],
+  "oled-panel/y": [
+    "pic/odm-ea1-revD/y/revB_yellow.jpg"
+  ],
+  "odm-ea1-revD/g": [
+    "pic/odm-ea1-revD/g/revB_green.jpg"
+  ],
+  "oled-panel/g": [
+    "pic/odm-ea1-revD/g/revB_green.jpg"
+  ],
+  "odm-ea1-revD/b": [
+    "pic/odm-ea1-revD/b/revB_blue.jpg"
+  ],
+  "oled-panel/b": [
+    "pic/odm-ea1-revD/b/revB_blue.jpg"
+  ]
+}
