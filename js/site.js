@@ -15,8 +15,12 @@
     if (nav) nav.outerHTML = `
 <nav>
   <a class="nav-brand" href="${R}index.html">xrd.lv</a>
-  <div class="nav-links"><a href="${R}index.html">Products</a><a href="${R}3dp/">Services</a></div>
-  ${SHOP ? `<a class="nav-cart" href="${SHOP}/">Shop →</a>` : ''}
+  <div class="nav-links">
+    <a href="${R}index.html">Products</a>
+    <a href="${R}3dp/">Services</a>
+    <a href="${R}about.html">About</a>
+    ${SHOP ? `<a href="${SHOP}/">Shop</a>` : ''}
+  </div>
 </nav>`;
     const footer = document.getElementById('footer-placeholder');
     if (footer) footer.outerHTML = `
