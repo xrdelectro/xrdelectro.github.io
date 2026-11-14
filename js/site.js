@@ -24,7 +24,7 @@
 </nav>`;
     const footer = document.getElementById('footer-placeholder');
     if (footer) footer.outerHTML = `
-<footer><div class="container">Ships from Latvia, EU &nbsp;·&nbsp; <a data-m="jogpAyse/mw">e-mail</a></div></footer>`;
+<footer><div class="container">Ships from Latvia, EU &nbsp;·&nbsp; <a data-m="jogpAyse/mw">e-mail</a> &nbsp;·&nbsp; <a href="${R}privacy/">Privacy</a></div></footer>`;
     if (!document.title.includes('xrd.lv')) document.title += ' — xrd.lv';
   }
 

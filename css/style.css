@@ -361,3 +361,15 @@ footer {
 .data-table input.weight-g { width: 4.5rem; }
 
 [hidden] { display: none !important; }
+
+/* Admin overview and customer table */
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.75rem; }
+.stat { border: 1px solid var(--border); border-radius: var(--radius); padding: 0.6rem 0.8rem; }
+.stat .v { font-size: 1.35rem; font-weight: 700; }
+.stat .k { font-size: 0.78rem; color: var(--text-muted); }
+.stat .d { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem; }
+#customers th[data-sort] { cursor: pointer; user-select: none; white-space: nowrap; }
+#customers th.sorted::after { content: ' ▾'; }
+#customers th.sorted.asc::after { content: ' ▴'; }
+.hint-line { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem; }
+.stat .v.small { font-size: 0.95rem; line-height: 1.6; }
