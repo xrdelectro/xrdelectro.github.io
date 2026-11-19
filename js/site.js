@@ -52,6 +52,10 @@
     const avail = typeof Stock === 'undefined' ? null
       : ps.reduce((n, p) => n + Stock.forProduct(p.id, {}, data).available, 0);
     const stock = avail == null ? '' : avail > 0 ? ' · in stock' : data.backorder?.allowed ? ' · backorder' : ' · out of stock';
+    const sale = data.sales?.[name];
+    if (sale && sale.left > 0 && sale.cents < Math.min(...prices) * 100) {
+      return `sale ${(sale.cents / 100).toFixed(2)} € (regular ${Math.min(...prices)} €) · ${sale.left} available`;
+    }
     return `${from}${Math.min(...prices)} €${stock}`;
   }
 

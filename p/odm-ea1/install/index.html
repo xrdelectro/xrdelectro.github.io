@@ -85,15 +85,17 @@
 
       <h2 id="test">4. Test and brightness</h2>
       <p>On Four, Heat and Rytm, simply reconnect the board (a piece of cardboard between the boards keeps them apart) and adjust brightness on the device.
-      On Keys, testing on USB power is easier: the module shows test text with DIP switch 6 on. To reach the DIP switches, push the long black clip at the
-      top of the bracket toward the board and slide the screen out.</p>
+      On Keys, testing on USB power is easier: plug a micro-USB cable into the module. Until the Elektron board sends it anything, the module shows
+      its start screen: serial number, www.xrd.lv/p/odm-ea1, a blinking "(no incoming data)" and the firmware version. No DIP switch is needed
+      (firmware v1.0.4 and later; modules shipped now have v1.0.7).</p>
+      <p>Adjust brightness with the trim pot (red arrow in the earlier photo) once the module is soldered. Leave the DIP switches
+      as they came: DIP 6 is set for the panel fitted (on most white modules it is on), the rest are off (towards the middle of the module).
+      They are for settings and troubleshooting: see the <a href="../dips/">DIP switch page</a>.
+      To reach them, push the long black clip at the top of the bracket toward the board and slide the screen out.</p>
       <figure><img src="../../../pic/install/sip-15.jpg" alt="Push the clip down" loading="lazy"><figcaption>Push the clip down</figcaption></figure>
       <figure><img src="../../../pic/install/sip-16.jpg" alt="Slide the screen out" loading="lazy"><figcaption>Slide the screen out</figcaption></figure>
       <figure><img src="../../../pic/install/sip-17.jpg" alt="DIP switches revealed" loading="lazy"><figcaption>DIP switches revealed</figcaption></figure>
-      <figure><img src="../../../pic/install/sip-18.jpg" alt="Test text with DIP 6 on" loading="lazy"><figcaption>Test text with DIP 6 on</figcaption></figure>
-      <p>Adjust brightness with the trim pot (red arrow in the earlier photo) once the module is soldered. Then
-      <strong>switch DIP 6 back off</strong>: the test switches 4–7 must all be off in normal use (DIP 7 on, for example, makes the screen look stuck).
-      DIP 1–3 are settings (inverted display, fixed brightness levels); see the <a href="../dips/">DIP switch page</a>.</p>
+      <figure><img src="../../../pic/install/sip-18.jpg" alt="Test text of firmware before v1.0.6 (DIP 6 on)" loading="lazy"><figcaption>Firmware before v1.0.6: test text with DIP 6 on</figcaption></figure>
 
       <h2>5. Reassembly</h2>
       <p>Reverse the steps. Fit the keyboard screws first. Screws only snug. Put in a few board screws, reconnect everything and test before fitting the
@@ -104,7 +106,7 @@
       <p>More in <a href="../dips/">DIP switches and troubleshooting</a>.</p>
       <ul>
         <li><strong>Screen protector pushed out:</strong> the kit's spacers were used; fit Elektron's originals (or small bolts and nuts at the bottom).</li>
-        <li><strong>Strange or frozen screen:</strong> check that DIP switches 4–7 are off (unlatch the bracket: 4 snap hooks, press the top pair
+        <li><strong>Strange, frozen or shifted screen:</strong> check that DIP switches 4, 5 and 7 are off and DIP 6 is as it came (unlatch the bracket: 4 snap hooks, press the top pair
           toward each other first).</li>
         <li><strong>Vertical halo stripes, bottom-row leakage:</strong> fixed in firmware v1.0.5 (revC boards on). Write to <a data-m="jogpAyse/mw">e-mail</a>
           with a photo of the serial number (left side of the bracket, below the code).</li>

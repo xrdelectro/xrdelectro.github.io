@@ -16,9 +16,11 @@
     <div class="prose guide">
       <p class="breadcrumb"><a href="../">odm-ea1 OLED display module for Analog Mk1</a> / DIP switches and troubleshooting</p>
       <h1>DIP switches and troubleshooting</h1>
-      <p>Mostly for troubleshooting. The everyday use: with the device open and off, power the module from micro-USB and switch DIP 6 on to see text
-      while you adjust brightness with the trim pot.</p>
-      <p><strong>When done, switch DIP 4–7 off</strong> (towards the middle of the module). A test mode left on interferes with normal operation.</p>
+      <p>Mostly for troubleshooting. To adjust brightness with the device open and off, power the module from micro-USB: it shows its start screen
+      (serial number, www.xrd.lv/p/odm-ea1, "(no incoming data)", firmware version) while you turn the trim pot. No DIP switch is needed
+      (firmware v1.0.4 and later). This page describes firmware v1.0.7, the one modules ship with now; older versions are noted where they differ.</p>
+      <p><strong>In normal use, DIP 4, 5 and 7 are off</strong> (towards the middle of the module): a test mode left on interferes with normal operation.
+      <strong>Leave DIP 6 as it came:</strong> it is set for the panel fitted (on most white modules it is on).</p>
 
       <h2>Where they are</h2>
       <p>Under the OLED panel. Press the plastic clip (on the long edge, near the USB socket) towards the board and, holding it, slide the panel up.
@@ -27,19 +29,20 @@
       <h2>What each switch does</h2>
       <table class="spec-table">
         <tr><td>DIP 1</td><td>Inverted display</td></tr>
-        <tr><td>DIP 2, 3</td><td>Brightness: both off = set by the trim pot; the other three combinations are fixed low, medium and high (the pot is ignored)</td></tr>
-        <tr><td>DIP 4</td><td>Debug screen: firmware version and the state of the input pins</td></tr>
+        <tr><td>DIP 2, 3</td><td>Brightness: both off = set by the trim pot; only DIP 2 on = lowest, only DIP 3 on = medium, both on = highest (the pot is ignored)</td></tr>
+        <tr><td>DIP 4</td><td>Debug screen: "DBG", the firmware version, the state of the input pins, the trim pot and brightness readings</td></tr>
         <tr><td>DIP 5</td><td>Panel test: a sliding unlit vertical bar (inverted with DIP 1)</td></tr>
-        <tr><td>DIP 6</td><td>Test text</td></tr>
-        <tr><td>DIP 7</td><td>Firmware v1.0.2: a sample Analog Keys screen; v1.0.1: debug output over USB serial. Makes the screen look stuck if left on.</td></tr>
+        <tr><td>DIP 6</td><td>v1.0.6 and later: the panel's column offset, set when the module is built for the panel fitted (on for most white modules). Leave it as it came: in the wrong position the picture is shifted 4 pixel columns. Before v1.0.6: test text.</td></tr>
+        <tr><td>DIP 7</td><td>A sample Analog Keys screen (v1.0.2 and later; v1.0.1: debug output over USB serial). Makes the screen look stuck if left on.</td></tr>
       </table>
 
       <h2>Nothing on the screen after installing</h2>
       <ol>
         <li>Look over all solder joints: each should have a clean fillet, and no solder bridging neighbouring pins.</li>
-        <li>Check the panel: switch DIP 6 on and power the module from a known-good 5&nbsp;V micro-USB supply. It should show text with a web address.
+        <li>Check the panel: with DIP 4, 5 and 7 off (DIP 6 as it came), power the module from a known-good 5&nbsp;V micro-USB supply. It should show its start screen
+          with the serial number and a web address (before v1.0.4: switch DIP 6 on for test text).
           If not, the flat cable from the panel to the board has probably come loose: reseat it. If that doesn't help, the panel or board is faulty.</li>
-        <li>If the panel works: switch DIP 4 on and all others off (DIP 6 too). It shows "DBG", "fw" with the version, and graphics that follow
+        <li>If the panel works: switch DIP 4 on and all others off. It shows "DBG", "fw" with the version, and graphics that follow
           the input pins. Disconnect USB, then film the DBG screen while you power on the Elektron device, and send the video to
           <a data-m="jogpAyse/mw">e-mail</a>: it shows whether an input pin gets no signal from the main board.</li>
       </ol>
@@ -48,6 +51,7 @@
 
       <h2>Known issues</h2>
       <ul>
+        <li><strong>Picture shifted sideways by a few pixels:</strong> DIP 6 is not in the position the module came with (firmware v1.0.6 and later). Flip it.</li>
         <li><strong>Vertical halo stripes, bottom-row leakage:</strong> fixed in firmware v1.0.5 (revC boards on). Write to
           <a data-m="jogpAyse/mw">e-mail</a> with a photo of the serial number (left side of the bracket, below the code).</li>
         <li><strong>Screen protector pushed out:</strong> the kit's spacers were used; fit Elektron's original ones.</li>
