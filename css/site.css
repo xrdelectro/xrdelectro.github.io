@@ -29,3 +29,10 @@
 .prose a, .help-list a { text-decoration: underline; }
 .guide .spec-table td:first-child { padding-right: 1rem; white-space: nowrap; }
 .cards { align-items: start; }
+.shop-offline::after { content: " (offline)"; font-size: 0.85em; opacity: 0.7; }
+#shop-offline { position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 50; max-width: 40rem; margin: 0 auto;
+  padding: 0.8rem 1rem; background: #fff8e1; border: 1px solid #e0c070; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.15);
+  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+#shop-offline p { margin: 0; flex: 1 1 16rem; }
+#shop-offline a { text-decoration: underline; }
+#shop-offline .buy-btn { text-decoration: none; }
